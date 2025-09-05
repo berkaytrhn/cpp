@@ -2,8 +2,9 @@
 using namespace std;
 
 int main() {
-    cout << "Hello, World from C++!" << endl;
-    cout.flush();
-    cin.get();
+    cout << "Enter a number:" << endl;
+    int favNumber;
+    cin >> favNumber;
+    cout << "number : " << favNumber << endl;
     return 0;
 }
