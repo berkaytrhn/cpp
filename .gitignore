@@ -38,7 +38,7 @@
 *.pdb
 
 **/libs/**
-
+**/**.ppm
 # Kernel Module Compile Results
 *.mod*
 *.cmd

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 4.1)
-project(HelloWorld)
+project(PPMReader)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(main main.cpp)
+add_executable(ppm_reader ppm_reader.cpp)
