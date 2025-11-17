@@ -7,5 +7,5 @@
 ## Run 
 
 ```
-./scripts/run.sh ./sub_module/ executable.exe
+./scripts/run.sh ./sub_module/ executable.exe ...params
 ```
