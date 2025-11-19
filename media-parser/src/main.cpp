@@ -1,9 +1,10 @@
 #include <ppm_parser.hpp>
+#include <png_parser.hpp>
 #include <opencv2/opencv.hpp>
 #include <iostream>
 
 int main(int argc, char** argv){
-    std::unique_ptr<PPMParser> my_parser = PPMParser::create_ppm_parser();
+    std::unique_ptr<MediaParser> my_parser = PNGParser::create_png_parser();
     
     if(argc < 2){
         printf("Please provide a Media File path.\n");

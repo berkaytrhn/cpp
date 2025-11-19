@@ -8,6 +8,7 @@ set(OpenCV_DIR "../libs/OpenCV-MinGW-Build-OpenCV-4.5.5-x64")
 set(SOURCES
     src/main.cpp
     src/ppm_parser.cpp
+    src/png_parser.cpp
 )
 
 find_package(OpenCV REQUIRED)

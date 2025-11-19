@@ -1,7 +1,5 @@
 #include <ppm_parser.hpp>
-#include <stdio.h>
 #include <fstream>
-#include <iostream>
 
 cv::Mat PPMParser::parse(const std::string &path) {
     std::ifstream file_stream(path, std::ios::binary);
@@ -14,10 +12,12 @@ cv::Mat PPMParser::parse(const std::string &path) {
     int width, height, color_ceiling;
     file_stream >> width >> height;
     // new line
-    file_stream.get();
+    //file_stream.get();
+    file_stream >> std::ws; // white space
     file_stream >> color_ceiling;
     // new line
-    file_stream.get();
+    // file_stream.get();
+    file_stream >> std::ws; // white space
 
     // Read pixel data
     cv::Mat image(height, width, CV_8UC3);
